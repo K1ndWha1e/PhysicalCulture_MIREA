@@ -1,6 +1,10 @@
 from generation import *
 
-class Data_Geranate():
+class Data_Generate():
+    def gen_timesleep():
+        timesleep = TimeSleep.rand_timesleep()
+        return timesleep
+
     def gen_appetite():
         appetitte = Appetite().rand_appetite()
         return appetitte
