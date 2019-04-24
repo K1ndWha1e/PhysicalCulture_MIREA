@@ -1,11 +1,11 @@
-from generation import *
+from generation.classes import *
 
 class Data_Generate():
-    def gen_timesleep():
-        timesleep = TimeSleep.rand_timesleep()
+    def gen_timesleep(self):
+        timesleep = TimeSleep().rand_timesleep()
         return timesleep
 
-    def gen_appetite():
+    def gen_appetite(self):
         appetitte = Appetite().rand_appetite()
         return appetitte
 
@@ -22,28 +22,26 @@ class Data_Generate():
         return gymnastic
 
     def gen_name_physical_culture():
-        global name_physical_culture
+        list_name_physical_culture = []
 
         name_physical_culture = NamePhysicalCulture().rand_physicalculture()
 
+        list_name_physical_culture.append(name_physical_culture)
+
         return name_physical_culture
 
-    def gen_counts_exercises():
-        global result
-
+    def gen_counts_exercises(self, name_physical_culture):
         counts_exercises_and_results = Counts_Exercises().rand_countsphysical(name_physical_culture)
+        print(name_physical_culture)
+        print(counts_exercises_and_results[0])
 
-        counts_exercises = counts_exercises_and_results[0]
+        return counts_exercises_and_results[0]
 
-        result = counts_exercises_and_results[1]
-
-        return counts_exercises
 
     def gen_conclusion():
         return result
 
+
     def gen_feel():
         feel = Feel().rand_feel()
         return feel
-
-

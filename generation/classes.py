@@ -1,14 +1,16 @@
 import random
 
+
 class TimeSleep:
     def rand_timesleep(self):
         time = random.randint(6,8)
 
         return time
 
+
 class Appetite:
     def rand_appetite(self):
-        appetit = ['Плохой', 'Хороший', 'Отличный']
+        appetit = ['Хороший', 'Плохой', 'Хороший', 'Отличный']
         rand_appetite = random.choice(appetit)
 
         return rand_appetite
