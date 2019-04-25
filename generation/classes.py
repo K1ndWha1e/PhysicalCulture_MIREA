@@ -55,60 +55,47 @@ class Counts_Exercises:
             counts = random.randint(10, 20)
             minutes = random.randint(20, 35)
 
-            get_conclusion = number_of_approaches * counts
-
             final_result = '{0} подх. по {1} раз, {2} мин.'.format(number_of_approaches, counts, minutes)
 
-            return final_result, get_conclusion
+            return final_result
 
         elif physicalcaulture == 'Бег':
             distance = random.randint(3, 5)
             rate = ['Низкий', 'Средний', 'Высокий']
             rand_rate = random.choice(rate)
 
-            get_conclusion = '{0} мин.'.format(random.randint(20, 30))
-
             final_result = '{0} км, темп {1}'.format(distance, rand_rate)
 
-            return final_result, get_conclusion
+            return final_result
 
         elif physicalcaulture == '-':
             empty = '-'
 
-            get_conclusion = '-'
-
-            return empty, get_conclusion
+            return empty
 
         elif physicalcaulture == 'Приседания':
             number_of_approaches = random.randint(3, 5)
             counts = random.randint(10, 30)
 
-            get_conclusion = number_of_approaches * counts
-
             final_result = '{0} подх., {1} раз'.format(number_of_approaches, counts)
 
-            return final_result, get_conclusion
+            return final_result
 
         elif physicalcaulture == 'Прыжки через скакалку':
             number_of_approaches = random.randint(3, 5)
             counts = random.randint(30, 50)
 
-            get_conclusion = number_of_approaches * counts
-
             final_result = '{0} подх., {1} раз'.format(number_of_approaches, counts)
 
-            return final_result, get_conclusion
+            return final_result
 
         elif physicalcaulture == 'Подтягивания':
             number_of_approaches = random.randint(3, 5)
             counts = random.randint(5, 20)
 
-            get_conclusion = number_of_approaches * counts
-
             final_result = '{0} подх., {1} раз'.format(number_of_approaches, counts)
 
-            return final_result, get_conclusion
-
+            return final_result
 
 class Feel:
     def rand_feel(self):
