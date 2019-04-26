@@ -22,13 +22,13 @@ class Column_Fill:
         self.ws = ws
 
 
-    def columns_fill(self, count_days_generate):
+    def columns_fill(self, count_days_generate, personal_weight):
 
         first_column = A_Column().column(self.ws, count_days_generate)
         second_column = B_Column().column(self.ws, count_days_generate)
         three_column = C_Column().column(self.ws, count_days_generate)
         four_column = D_Column().column(self.ws, count_days_generate)
-        fifth_column = E_Column().column(self.ws, count_days_generate)
+        fifth_column = E_Column().column(self.ws, count_days_generate, personal_weight)
         sixth_column = F_Column().column(self.ws, count_days_generate)
         seventh_column = G_AND_H_AND_I_Column().column(self.ws, count_days_generate)
         eighth_column = J_Column().column(self.ws, count_days_generate)
@@ -39,7 +39,11 @@ if __name__ == '__main__':
     ws = wb.active
 
     Welcome_Message().Header()
+
+    personal_weight = int(input('Enter is ur weight?\n'))
+
     count_days_generate = int(input('How many day did u want to generate?\n'))
-    Column_Fill(ws).columns_fill(count_days_generate)
+
+    Column_Fill(ws).columns_fill(count_days_generate, personal_weight)
 
     wb.save('physical_culture.xlsx')

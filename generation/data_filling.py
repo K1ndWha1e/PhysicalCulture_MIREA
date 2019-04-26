@@ -1,12 +1,13 @@
 from generation.random_physicalculture import Data_Generate
 from generation.style_setup import Style
+from random import randint
 
 class A_Column:
     def column(self, ws, count_days_generate):
         last_point = 16 + count_days_generate
 
         for i, row in enumerate(range(17, last_point)):
-            _ = ws.cell(column=1, row=row, value="=(A{0} + 1)".format(16 + i))
+            _ = ws.cell(column=1, row=row, value="=(A{0} + {1})".format(16 + i, randint(1, 3)))
 
         latter = 'A16:A{0}'.format(last_point)
         Style().style(latter, ws)
@@ -46,11 +47,11 @@ class D_Column:
 
 
 class E_Column:
-    def column(self, ws, count_days_generate):
+    def column(self, ws, count_days_generate, personal_weight):
         last_point = 16 + count_days_generate
 
-        for row in range(19, last_point):
-            _ = ws.cell(column=5, row=row, value="{0}".format(Data_Generate.gen_weight()))
+        for row in range(16, last_point):
+            _ = ws.cell(column=5, row=row, value="{0}".format(Data_Generate().gen_weight(personal_weight)))
 
         latter = 'E16:E{0}'.format(last_point)
         Style().style(latter, ws)
@@ -60,7 +61,7 @@ class F_Column:
     def column(self, ws, count_days_generate):
         last_point = 16 + count_days_generate
 
-        for row in range(19, last_point):
+        for row in range(16, last_point):
             _ = ws.cell(column=6, row=row, value="{0}".format(Data_Generate.gen_gymnastic()))
 
         latter = 'F16:F{0}'.format(last_point)

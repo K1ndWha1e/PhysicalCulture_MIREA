@@ -42,7 +42,8 @@ class MorningGymnastics:
 
 class NamePhysicalCulture:
     def rand_physicalculture(self):
-        physical = ['Отжимание от пола', 'Бег', '-', 'Приседания', 'Подтягивания', 'Прыжки через скакалку']
+        physical = ['Отжимание от пола', 'Бег', '-', 'Приседания', 'Подтягивания', 'Прыжки через скакалку', 'Пресс',
+                    'Выпады с гантелей', 'Поднятие гантелей']
         rand_physical = random.choice(physical)
 
         return rand_physical
@@ -96,6 +97,32 @@ class Counts_Exercises:
             final_result = '{0} подх., {1} раз'.format(number_of_approaches, counts)
 
             return final_result
+
+        elif physicalcaulture == 'Пресс':
+            number_of_approaches = random.randint(3, 5)
+            counts = random.randint(10, 20)
+
+            final_result = '{0} подх., {1} раз'.format(number_of_approaches, counts)
+
+            return final_result
+
+        elif physicalcaulture == 'Выпады с гантелей':
+            number_of_approaches = random.randint(3, 5)
+            counts = random.randint(10, 15)
+
+            final_result = '{0} подх., {1} раз'.format(number_of_approaches, counts)
+
+            return final_result
+
+        elif physicalcaulture == 'Поднятие гантелей':
+            number_of_approaches = random.randint(3, 5)
+            counts = random.randint(15, 20)
+
+            final_result = '{0} подх., {1} раз'.format(number_of_approaches, counts)
+
+            return final_result
+
+
 
 class Feel:
     def rand_feel(self):

@@ -17,8 +17,8 @@ class Data_Generate():
 
         return pulse
 
-    def gen_weight():
-        weight = Weights().rand_weights(80)
+    def gen_weight(self, personal_weight):
+        weight = Weights().rand_weights(personal_weight)
 
         return weight
 
