@@ -2,6 +2,7 @@ from generation.random_physicalculture import Data_Generate
 from generation.style_setup import Style
 from random import randint
 
+
 class A_Column:
     def column(self, ws, count_days_generate):
         last_point = 16 + count_days_generate
@@ -9,9 +10,9 @@ class A_Column:
         for i, row in enumerate(range(17, last_point)):
             _ = ws.cell(column=1, row=row, value="=(A{0} + {1})".format(16 + i, randint(1, 3)))
 
+
         latter = 'A16:A{0}'.format(last_point)
         Style().style(latter, ws)
-
 
 
 class B_Column:
@@ -23,6 +24,7 @@ class B_Column:
 
         latter = 'B16:B{0}'.format(last_point)
         Style().style(latter, ws)
+
 
 class C_Column:
     def column(self, ws, count_days_generate):
@@ -39,7 +41,7 @@ class D_Column:
     def column(self,ws, count_days_generate):
 
         last_point = 16 + count_days_generate
-        for row in range(19, last_point):
+        for row in range(16, last_point):
             _ = ws.cell(column=4, row=row, value="{0}".format(Data_Generate.gen_pulse()))
 
         latter = 'D16:D{0}'.format(last_point)
@@ -95,6 +97,7 @@ class G_AND_H_AND_I_Column:
         Style().style(latter, ws)
 
         return list_name_physical_culture
+
 
 class J_Column:
     def column(self, ws, count_days_generate):

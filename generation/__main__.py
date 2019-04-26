@@ -36,13 +36,13 @@ class Column_Fill:
 
 if __name__ == '__main__':
     wb = load_workbook(filename='download.xlsx')
-    ws = wb.active
 
+    ws = wb.active
     Welcome_Message().Header()
 
     personal_weight = int(input('Enter is ur weight?\n'))
 
-    count_days_generate = int(input('How many day did u want to generate?\n 50 -> recommended'))
+    count_days_generate = int(input('How many day did u want to generate?\n 50 -> recommended\n'))
 
     Column_Fill(ws).columns_fill(count_days_generate, personal_weight)
 

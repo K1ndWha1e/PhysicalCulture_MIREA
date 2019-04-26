@@ -1,4 +1,8 @@
+import datetime
+
 from openpyxl.styles import Font, Alignment
+from openpyxl.styles import NamedStyle
+
 
 class Style:
     def style(self, latter_column, ws):
@@ -9,3 +13,4 @@ class Style:
 
             cell[0].alignment = Alignment(horizontal='center',
                                           vertical='center')
+
