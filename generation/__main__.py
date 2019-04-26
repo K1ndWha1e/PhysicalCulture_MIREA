@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
     personal_weight = int(input('Enter is ur weight?\n'))
 
-    count_days_generate = int(input('How many day did u want to generate?\n'))
+    count_days_generate = int(input('How many day did u want to generate?\n 50 -> recommended'))
 
     Column_Fill(ws).columns_fill(count_days_generate, personal_weight)
 
