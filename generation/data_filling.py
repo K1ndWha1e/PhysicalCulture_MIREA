@@ -10,7 +10,6 @@ class A_Column:
         for i, row in enumerate(range(17, last_point)):
             _ = ws.cell(column=1, row=row, value="=(A{0} + {1})".format(16 + i, randint(1, 3)))
 
-
         latter = 'A16:A{0}'.format(last_point)
         Style().style(latter, ws)
 
