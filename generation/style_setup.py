@@ -1,7 +1,4 @@
-import datetime
-
 from openpyxl.styles import Font, Alignment
-from openpyxl.styles import NamedStyle
 
 
 class Style:
