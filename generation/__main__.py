@@ -33,7 +33,7 @@ if __name__ == '__main__':
 
     print('Welcome to the GenCulture')
 
-    #Header(ws)
+    Header(ws)
 
     personal_weight = int(input('Enter is ur weight?\n'))
 

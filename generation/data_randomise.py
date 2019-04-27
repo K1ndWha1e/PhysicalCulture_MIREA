@@ -19,6 +19,7 @@ def rand_heartbeat():
 
     return rand_pulse
 
+
 def rand_weights(weight):
     minus_weight = weight - 2
     plus_weight = weight + 2
@@ -33,7 +34,6 @@ def rand_morning_gymnastics():
     rand_gymnastics = random.choice(yes_or_no)
 
     return rand_gymnastics
-
 
 
 def rand_physicalculture():

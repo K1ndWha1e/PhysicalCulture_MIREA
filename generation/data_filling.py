@@ -3,7 +3,6 @@ from generation.style_setup import Style
 from random import randint
 
 
-
 def A_Column(ws, count_days_generate):
     last_point = 16 + count_days_generate
 
@@ -12,7 +11,6 @@ def A_Column(ws, count_days_generate):
 
     latter = 'A16:A{0}'.format(last_point)
     Style(latter, ws).style()
-
 
 
 def B_Column(ws, count_days_generate):
@@ -25,7 +23,6 @@ def B_Column(ws, count_days_generate):
     Style(latter, ws).style()
 
 
-
 def C_Column(ws, count_days_generate):
     last_point = 16 + count_days_generate
 
@@ -36,7 +33,6 @@ def C_Column(ws, count_days_generate):
     Style(latter, ws).style()
 
 
-
 def D_Column(ws, count_days_generate):
 
     last_point = 16 + count_days_generate
@@ -45,7 +41,6 @@ def D_Column(ws, count_days_generate):
 
     latter = 'D16:D{0}'.format(last_point)
     Style(latter, ws).style()
-
 
 
 def E_Column(ws, count_days_generate, personal_weight):
