@@ -27,11 +27,11 @@ def columns_fill(ws, count_days_generate, personal_weight):
 
 
 if __name__ == '__main__':
+    print('Welcome to the GenCulture')
+
     wb = load_workbook(filename='download.xlsx')
 
     ws = wb.active
-
-    print('Welcome to the GenCulture')
 
     Header(ws)
 
