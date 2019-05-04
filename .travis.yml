@@ -1,10 +1,11 @@
 language: python
 
-python: 
- - "3.5"
- - "3.6"
- - "3.6"
- - "3.7"
+os: osx
+
 install:
-  - pip install -r Pipfile
+  - pip install pipenv
+  - pipenv install openpyxl
+ 
+ script: python3 __main__.py
+  
 
