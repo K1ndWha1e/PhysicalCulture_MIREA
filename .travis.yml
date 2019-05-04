@@ -4,7 +4,7 @@ os: osx
 
 install:
   - pip install pipenv
-  - pipenv install openpyxl
+  - pip install openpyxl
  
  script: python3 __main__.py
   
