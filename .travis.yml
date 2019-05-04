@@ -6,5 +6,5 @@ python:
  - "3.6"
  - "3.7"
 install:
-  - pip install Pipfile
+  - pip install -r Pipfile
 
