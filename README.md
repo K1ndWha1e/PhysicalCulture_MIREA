@@ -4,12 +4,12 @@
 [![Love](https://img.shields.io/badge/made%20with-LOVE-green.svg?style=flat)](https://github.com/K1ndWha1e/PhysicalCulture_MIREA)
 [![Repo Stars](https://img.shields.io/github/stars/K1ndWha1e/PhysicalCulture_MIREA.svg?style=social)](https://github.com/K1ndWha1e/PhysicalCulture_MIREA)
 </br>
-Hey, guys, I want to introduce you the GenCulture, let's me show what this sh*t could:
-- Generate date from the second semester begins
+Hey, guys, I want to introduce you the GenCulture, let me show what this sh*t could:
+- Generate date from the second semester begins (or just change date in A-16)
 - All data are dinamic and you'll get really physical culture diary
 - And the GenCulture could fill header of this sheet which contains Name - Surname - LastName - Studying Group - Birthday
 </br>
-<p>&nbsp;If you know how to work with <em> PyCharm </em> you can clone this repo and start, but for rest people we are beggining.</p>
+<p>&nbsp;If you know how to work with <em> PyCharm </em> you can clone this repo and start, if you can't, check below.</p>
 </br>
 <p>&nbsp;First of all, you need to download Python from official site: <a href=https://www.python.org/downloads/>download</a></p>
 </br>
@@ -40,13 +40,6 @@ Hey, guys, I want to introduce you the GenCulture, let's me show what this sh*t 
   </br>
   <p>&nbsp;That's all, if you have any questions, please, ask me.
   </br>
-&nbsp;Piece!</p>
+&nbsp;Peace!</p>
 </br>
-
-<h1>F.A.Q</h1>
-
-</br>
-&nbsp;<p><b>Q:  I want to generate a diary for first half of the year, what I have to do?</b></p>
-</br>
-&nbsp;<p><b>A:  So, you have to change date in column A-16 to 01.09.[year]</b></p>
 
