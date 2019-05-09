@@ -3,11 +3,11 @@ from generation.data_filling import *
 
 
 def Header(ws):
-    surname = input('Enter ur surname\n')
-    name = input('Enter ur name\n')
-    last_name = input('Enter ur last-name\n')
-    study_group = input('Enter name of ur studying group\n')
-    date_birthday = input('Enter the date of ur birthday\nExample: 18/09/99\n')
+    surname = input('Введи свою фамилию\n')
+    name = input('Введи своё имя?\n')
+    last_name = input('Введи своё отчество\n')
+    study_group = input('В какой группе учишься?\n')
+    date_birthday = input('Укажи дату своего рождения родился?\nПример: 18/09/99\n')
 
     ws['I9'] = '{0} {1} {2}' .format(surname, name, last_name)
     ws['I10'] = '{0}'.format(study_group)
@@ -35,9 +35,9 @@ if __name__ == '__main__':
 
     Header(ws)
 
-    personal_weight = int(input('Enter is ur weight?\n'))
+    personal_weight = int(input('Сколько ты весишь?\nПример: 75\n'))
 
-    count_days_generate = int(input('How many day did u want to generate?\n 50 -> recommended\n'))
+    count_days_generate = int(input('Сколько дней хочешь сгенерировать?\n Рекомендуется -> 50\n'))
 
     columns_fill(ws, count_days_generate, personal_weight)
 
