@@ -15,7 +15,7 @@ def rand_appetite():
 
 
 def rand_heartbeat():
-    rand_pulse = random.randint(60, 75)
+    rand_pulse = random.randint(60, 65)
 
     return rand_pulse
 
