@@ -3,38 +3,58 @@
 [![Commit Activity](https://img.shields.io/github/last-commit/K1ndWha1e/PhysicalCulture_MIREA.svg?style=flat)](https://github.com/K1ndWha1e/PhysicalCulture_MIREA)
 [![Love](https://img.shields.io/badge/made%20with-LOVE-green.svg?style=flat)](https://github.com/K1ndWha1e/PhysicalCulture_MIREA)
 [![Repo Stars](https://img.shields.io/github/stars/K1ndWha1e/PhysicalCulture_MIREA.svg?style=social)](https://github.com/K1ndWha1e/PhysicalCulture_MIREA)
-</br>
-Hey, guys, I want to introduce you the GenCulture, let me show what this sh*t could:
-- Generate date from the second semester begins (or just change date in A-16)
-- All data are dinamic and you'll get really physical culture diary
-- And the GenCulture could fill header of this sheet which contains Name - Surname - LastName - Studying Group - Birthday
-<p>&nbsp;If you know how to work with <em> PyCharm </em> you can clone this repo and start, if you can't, check below.</p>
-<p>&nbsp;First of all, you need to download Python from official site: <a href=https://www.python.org/downloads/>download</a></p>
-<p>&nbsp; Then you have to donwload PyCharm from official site: <a href=https://www.jetbrains.com/pycharm/download/#section=windows>download</a></p>
-</br>
-<p>&nbsp;After all installations, just follow me <b>step by step</b>:</p>
-</br>
-<p>&nbsp;So, launch PyCharm and click to <ins><b>Check out from Version Control</b></ins> and chose "Git"
-<img src="https://github.com/K1ndWha1e/PhysicalCulture_MIREA/blob/master/imgs/Снимок%20экрана%202019-05-04%20в%2023.46.43.png" alt="Git"></p>
-<p>&nbsp; Now, copy <a href=https://github.com/K1ndWha1e/PhysicalCulture_MIREA/>link<a> to this repo.
-  And past it:
-  <img src="https://github.com/K1ndWha1e/PhysicalCulture_MIREA/blob/master/imgs/Снимок%20экрана%202019-05-04%20в%2023.56.02.png" border="0">
-</br>
-&nbsp;then push clone... and wait a litle bit...
-<br>
-&nbsp;Look at the bottom panel, look for <em>terminal</em> 
-<img src="https://github.com/K1ndWha1e/PhysicalCulture_MIREA/blob/master/imgs/Снимок%20экрана%202019-05-05%20в%200.00.32.png" border="0"></p>
-</br>
-<p>&nbsp;Push at him and type this command:</p>
-</br>
-<p><b><em>pip install openpyxl</em></b></p>
-</br>
-<p>&nbsp;Now, look at left panel, look for folder <b>generation</b>, click at him twice, choose <b>__main__.py</b>, then click by right mouse buttom at free space and look for <em>"Run __main__.py"</em></p>
-</br>
-<img src="https://github.com/K1ndWha1e/PhysicalCulture_MIREA/blob/master/imgs/Снимок%20экрана%202019-05-05%20в%200.08.52.png" border="0">
-</br>
-<p>&nbsp;That's all, if you have any questions, please, ask me.
-</br>
-&nbsp;Peace!</p>
-</br>
+
+Хочу вам представить генератора дневника для физ-ры, вот что он умеет:
+- Заполнять шапку таблицы т.е. может залнить ФИО, название учебной группы и день рождения. (вво)
+- Генерировать все необходимые колонки:
+  - Дата, начиная с 11.02.2019 (можно изменить дату на нужную вам в ячейка A-16)
+  - Время сна
+  - Аппетит (Хороший, Плохой, Отличный)
+  - Пульс 
+  - Вес (+- 2 от того веса, что введёте с клавиатуры)
+  - УГГ (сам не знаю что это)
+  - Физические упражнения (Бег, Отживания, Подтягивания и что-то ещё)
+  - Результат выполния физических упражнений
+  - Самочувствие (Плохое, Хорошое, Отличное)
+  
+Если ты знаком с PyCharm, то просто клонируй репозирокий и запускай, а остальным - мы начинаем!
+
+Для начала нам нужно сказать Python с официального сайта [клик](https://www.python.org/downloads/)
+
+Потом, скачаем сам PyCharm [клик](https://www.jetbrains.com/pycharm/download/#section=windows)
+
+Думаю, не надо говорить, что нужно всё это "добро" надо установить. Всё получилось? Чудно, идём дальше.
+
+Запускаем PyCharm... настраиваем (просто жмём дальше)... выбираем ***Check out from Version Control***... жмём на Git
+
+[![Git](https://github.com/K1ndWha1e/PhysicalCulture_MIREA/raw/master/imgs/Снимок%20экрана%202019-05-04%20в%2023.46.43.png "Check out from Version Control")]
+
+Теперь, копируюм ссылку на этот репозиторий из адресной строки или [отсюда](https://github.com/K1ndWha1e/PhysicalCulture_MIREA)
+
+[![Git](https://github.com/K1ndWha1e/PhysicalCulture_MIREA/raw/master/imgs/Снимок%20экрана%202019-05-04%20в%2023.56.02.png)]
+
+Жмём на ***Clone***... ждём...
+
+Опустим наш взгляд вниз и найдём там ***Terminal***
+
+[![Git](https://github.com/K1ndWha1e/PhysicalCulture_MIREA/raw/master/imgs/Снимок%20экрана%202019-05-05%20в%200.00.32.png)]
+
+
+Клацаем на ***Terminal*** и вводим эту команду:
+
+```    
+    pip install pyopenxl
+```
+
+Обратим наш взор на панель слева и обнаружим там папку ***generation***, в этой папке находим __main.py__, на свободном пространстве жмём правой кнопкой мыши и выбираем run
+
+
+[![Git](https://github.com/K1ndWha1e/PhysicalCulture_MIREA/raw/master/imgs/Снимок%20экрана%202019-05-05%20в%200.08.52.png)]
+
+Дальше действует по заранее утверждённому плану!
+
+Всем спасибо! 
+P.S. если возникнут проблемы, пишите.
+P.P.S. удачи!
+
 
