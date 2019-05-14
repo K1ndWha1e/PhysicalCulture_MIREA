@@ -4,7 +4,7 @@ from generation.data_filling import *
 
 def Header(ws):
     surname = input('Введи свою фамилию\n')
-    name = input('Введи своё имя?\n')
+    name = input('Введи своё имя\n')
     last_name = input('Введи своё отчество\n')
     study_group = input('В какой группе учишься?\n')
     date_birthday = input('Укажи дату своего рождения родился?\nПример: 18/09/99\n')

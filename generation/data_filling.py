@@ -72,12 +72,13 @@ def G_AND_H_AND_I_Column(ws, count_days_generate):
         list_name_physical_culture.append(_.value)
 
     list_count_physical_culture = []
+
     for i, row in enumerate(range(16, last_point)):
-        _ = ws.cell(column=8, row=row, value="{0}".format(list_name_physical_culture[i]))
+        _ = ws.cell(column=8, row=row, value="{0}".format(gen_counts_exercises(list_name_physical_culture[i])))
         list_count_physical_culture.append(_.value)
 
     for i, row in enumerate(range(16, last_point)):
-        _ = ws.cell(column=9, row=row, value="{0}".format(list_count_physical_culture[i]))
+        _ = ws.cell(column=9, row=row, value="{0}".format(gen_conclusion(list_count_physical_culture[i])))
 
     latter = 'G16:G{0}'.format(last_point)
     Style(latter, ws).style()
